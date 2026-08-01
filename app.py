@@ -8,11 +8,10 @@ import pymysql
 @st.cache_resource
 def get_connection():
     return pymysql.connect(
-        host="mysql://root:WomgenOxKiVbXjcSxMbEDEbbzyZvieub@:/railway",
+        host="local_host",
         user="root",
-        password="WomgenOxKiVbXjcSxMbEDEbbzyZvieub",
-        database="railway",
-        port=3306
+        password="root",
+        database="bank"
     )
 
 connection = get_connection()
